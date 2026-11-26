@@ -1,6 +1,6 @@
 name: welcome
 on:
- workflow_dispatch:
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Testing application"
+      - run: echo "Testing application"git 
 
   deploy:
     needs: test
