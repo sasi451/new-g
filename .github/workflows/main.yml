@@ -1,6 +1,8 @@
 name: welcome
 on:
   push:
+    branches:
+      - dev
 jobs:
   build:
     runs-on: ubuntu-latest
